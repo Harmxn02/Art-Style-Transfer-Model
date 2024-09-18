@@ -2,7 +2,7 @@
 
 ## Foreword
 
-I totally forgot Tensorflow does not support GPU training on Windows by default. So the first three training sessions I was only using my CPU. For the 4000 and after iterations training sessions, I set up a WSL that **DID** have GPU training. And the training was of course way faster. I am stupid
+I totally forgot Tensorflow does not support GPU training on Windows by default. So the first three training sessions I was only using my CPU. For the 4000 and after iterations training sessions, I set up a WSL that **DID** have GPU training. And the training was of course way faster. I am stupid, and mistakes were made
 
 ## Starting images
 
