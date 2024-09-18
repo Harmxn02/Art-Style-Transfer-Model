@@ -12,23 +12,25 @@ I totally forgot Tensorflow does not support GPU training on Windows by default.
 
 ## Results
 
-| Iterations | Result after X iterations                                                          |
-| ---------- | ---------------------------------------------------------------------------------- |
-| 20         | ![result after 20 iterations](./images/export/stylized_image-20_iterations.png)    |
-| 400        | ![result after 400 iterations](./images/export/stylized_image-400_iterations.png)  |
-| 2000       | ![result after 400 iterations](./images/export/stylized_image-2000_iterations.png) |
-| 4000       | ![result after 400 iterations](./images/export/stylized_image-4000_iterations.png) |
+| Iterations | Result after X iterations                                                             |
+| ---------- | ------------------------------------------------------------------------------------- |
+| 20         | ![result after 20 iterations](./images/export/stylized_image-20_iterations.png)       |
+| 400        | ![result after 400 iterations](./images/export/stylized_image-400_iterations.png)     |
+| 2000       | ![result after 2000 iterations](./images/export/stylized_image-2000_iterations.png)   |
+| 4000       | ![result after 4000 iterations](./images/export/stylized_image-4000_iterations.png)   |
+| 20000      | ![result after 20000 iterations](./images/export/stylized_image-20000_iterations.png) |
 
 There is a difference between the first two images, albeit very small. The third image (2000 iterations) looks way different, but still not close to the Styled image.
 
 ## Training stats
 
-| Iterations | Training time (hh:mm:ss) | Training time (seconds) | Speed                                                                            |
-| ---------- | ------------------------ | ----------------------- | -------------------------------------------------------------------------------- |
-| 20         | 00:01:03                 | 63                      | 3.15 seconds per iteration                                                       |
-| 400        | 00:20:36                 | 1236                    | 3.09 seconds per iteration                                                       |
-| 2000       | 01:45:37                 | 6337                    | 3.16 seconds per iteration (running with several MS Edge tabs in the background) |
-| 4000       | 00:07:29                 | 449                     | 0.112 seconds per iteration (I decided to use my brain, and train using my GPU)  |
+| Iterations | Training time (hh:mm:ss) | Training time (seconds) | Device | Speed                                                                             |
+| ---------- | ------------------------ | ----------------------- | ------ | --------------------------------------------------------------------------------- |
+| 20         | 00:01:03                 | 63                      | CPU    | 3.15 seconds per iteration                                                        |
+| 400        | 00:20:36                 | 1236                    | CPU    | 3.09 seconds per iteration                                                        |
+| 2000       | 01:45:37                 | 6337                    | CPU    | 3.16 seconds per iteration (running with several MS Edge tabs in the background)  |
+| 4000       | 00:07:29                 | 449                     | GPU    | 0.11225 seconds per iteration (I decided to use my brain, and train using my GPU) |
+| 20000      | 00:37:22                 | 2242                    | GPU    | 0.11210 seconds per iteration                                                     |
 
 ![training time in seconds by iterations](./images/stats/training%20time%20in%20seconds%20by%20iterations.png)
 
